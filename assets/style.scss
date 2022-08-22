@@ -1,0 +1,84 @@
+$Light-Cyan: hsl(193, 38%, 86%);
+$Neon-Green: hsl(150, 100%, 66%);
+
+$Grayish-Blue: hsl(217, 19%, 38%);
+$Dark-Grayish-Blue: hsl(217, 19%, 24%);
+$Dark-Blue: hsl(218, 23%, 16%);
+
+* {
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $Dark-Blue;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    max-width: 530px;
+    padding: 50px 30px;
+    text-align: center;
+    background-color: $Dark-Grayish-Blue;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 15px;
+
+    @media (max-width: 375px) {
+        padding: 25px 15px;
+    }
+}
+
+.advice-nr {
+    color: $Neon-Green;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+
+    @media (max-width: 375px) {
+        font-size: 10px;
+    }
+}
+
+.advice_container {
+    color: $Light-Cyan;
+    font-size: 28px;
+    font-weight: 800;
+
+    @media (max-width: 375px) {
+        font-size: 22px;
+    }
+}
+
+.divider-container {
+    margin-bottom: 20px;
+
+    img {
+        width: 100%;
+        min-width: 200px;
+    }
+}
+
+.button {
+    background-color: $Neon-Green;
+    color: $Dark-Blue;
+    position: absolute;
+    line-height: 0;
+    padding: 15px;
+    border-radius: 50%;
+    bottom: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: all .1s;
+
+    &:hover {
+        box-shadow: 0 0 15px 3px $Neon-Green;
+    }
+}

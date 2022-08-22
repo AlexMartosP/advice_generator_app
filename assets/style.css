@@ -1,0 +1,78 @@
+* {
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218deg, 23%, 16%);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  max-width: 530px;
+  padding: 50px 30px;
+  text-align: center;
+  background-color: hsl(217deg, 19%, 24%);
+  border-radius: 20px;
+  position: relative;
+  margin: 0 15px;
+}
+@media (max-width: 375px) {
+  .container {
+    padding: 25px 15px;
+  }
+}
+
+.advice-nr {
+  color: hsl(150deg, 100%, 66%);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+@media (max-width: 375px) {
+  .advice-nr {
+    font-size: 10px;
+  }
+}
+
+.advice_container {
+  color: hsl(193deg, 38%, 86%);
+  font-size: 28px;
+  font-weight: 800;
+}
+@media (max-width: 375px) {
+  .advice_container {
+    font-size: 22px;
+  }
+}
+
+.divider-container {
+  margin-bottom: 20px;
+}
+.divider-container img {
+  width: 100%;
+  min-width: 200px;
+}
+
+.button {
+  background-color: hsl(150deg, 100%, 66%);
+  color: hsl(218deg, 23%, 16%);
+  position: absolute;
+  line-height: 0;
+  padding: 15px;
+  border-radius: 50%;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.button:hover {
+  box-shadow: 0 0 15px 3px hsl(150deg, 100%, 66%);
+}/*# sourceMappingURL=style.css.map */
